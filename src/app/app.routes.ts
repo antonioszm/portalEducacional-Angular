@@ -4,6 +4,7 @@ import { AlunosComponent } from './shared/components/pages/alunos/alunos.compone
 import { LoginComponent } from './shared/components/pages/login/login.component';
 import { CadastroComponent } from './shared/components/pages/cadastro/cadastro.component';
 import { DisciplinasComponent } from './shared/components/pages/disciplinas/disciplinas.component';
+import { RecuperacaoComponent } from './shared/components/recuperacao/recuperacao.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path: "disciplinas",
         component: DisciplinasComponent
+    },
+    {
+        path: "recuperacao",
+        component: RecuperacaoComponent
     }
 ];
