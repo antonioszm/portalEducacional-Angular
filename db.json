@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "nome": "Maria Silva",
+      "idade": 21,
+      "turma": "Turma A",
+      "email": "maria.silva@email.com",
+      "id": "5d6d"
+    },
+    {
+      "nome": "João Pereira",
+      "idade": 22,
+      "turma": "Turma B",
+      "email": "joao.pereira@email.com",
+      "id": "80c4"
+    },
+    {
+      "nome": "Ana Souza",
+      "idade": 20,
+      "turma": "Turma A",
+      "email": "ana.souza@email.com",
+      "id": "5e52"
+    },
+    {
+      "nome": "Fernanda Costa",
+      "idade": 22,
+      "turma": "Turma B",
+      "email": "fernanda.costa@email.com",
+      "id": "abf5"
+    }
+  ]
+}

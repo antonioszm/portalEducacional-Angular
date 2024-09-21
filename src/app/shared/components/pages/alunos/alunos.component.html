@@ -1,1 +1,42 @@
-<p>alunos works!</p>
+<body>
+  
+<div class="container">
+  <!-- Input de Pesquisa -->
+  <div class="search-bar">
+    <input
+      type="text"
+      placeholder="Pesquisar por nome ou email"
+      (keyup)="pesquisar()"
+    />
+    <button (click)="pesquisar()">Pesquisar</button>
+  </div>
+  <!-- Tabela de Alunos -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Email</th>
+        <th>Curso</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aluno of alunos">
+        <td>{{ aluno.nome }}</td>
+        <td>{{ aluno.cpf }}</td>
+        <td>{{ aluno.email }}</td>
+        <td>{{ aluno.curso }}</td>
+        <td>
+          <!-- Botão Editar -->
+          <button (click)="editarAluno(aluno.id)">Editar</button>
+          
+          <!-- Botão Excluir -->
+          <button (click)="excluirAluno(aluno.id)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
