@@ -2,9 +2,9 @@
     <div class="login">
         <h2 class="bemVindo">Bem vindo ao Portal Educacional</h2>
         <p>Ainda não tem conta? <a href="cadastro"> Cadastre-se</a></p>
-        <input class="pergunta" placeholder="Insira seu Email" required type="email">
-        <input class="pergunta" placeholder="Insira sua Senha" required type="password">
-        <button type="submit" class="confirmarLogin">Login</button>
+        <input class="pergunta"  [(ngModel)]="email"  placeholder="Insira seu Email" required type="email">
+        <input class="pergunta"  [(ngModel)]="senha" placeholder="Insira sua Senha" required type="password">
+        <button class="confirmarLogin" (click)="verificarLogin()">Login</button>
         <a href="recuperacao">Esqueci minha senha </a>
     </div>
 </body>
