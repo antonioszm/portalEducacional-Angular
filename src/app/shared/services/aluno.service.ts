@@ -1,15 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AlunoService {
-  private apiUrl = 'http://localhost:3000/user'; 
+  private apiUrl = 'http://localhost:3000/users'; 
+
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
   
   constructor(private http: HttpClient) { }
 
+  postAluno(aluno: any): Observable<any> {
+    return this.http.post<any>(this.apiUrl, aluno, this.httpOptions);
+  }
   getAlunos(): Observable<any> {
     return this.http.get(this.apiUrl);
   }

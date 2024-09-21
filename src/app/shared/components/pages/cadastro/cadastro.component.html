@@ -1,12 +1,17 @@
 <body>
     <div class="cadastro">
         <h2 class="bemVindo">Cadastre-se</h2>
-        <input class="pergunta" placeholder="Insira seu Nome Completo" required>
-        <input class="pergunta" placeholder="Insira seu CPF" required>
-        <input class="pergunta" placeholder="Insira seu Email" required type="email">
-        <input class="pergunta" placeholder="Insira seu Celular" required type="text">
-        <input class="pergunta" placeholder="Insira sua Senha" required type="password">
-        <input class="pergunta" placeholder="Insira sua Curso" required type="password">
-        <button type="submit" class="confirmarCadastro">Criar Conta</button>
+        <form [formGroup]="alunoForm" (ngSubmit)="onSubmit()">
+          <div class="form-section">
+            <input id="nomeCompleto" type="text" formControlName="nomeCompleto" class="pergunta" placeholder="Insira seu Nome Completo" required>
+            <input id="cpf" type="text" formControlName="cpf" class="pergunta" placeholder="Insira seu CPF" required>
+            <input id="email" type="email" formControlName="email" class="pergunta" placeholder="Insira seu Email" required>
+            <input id="celular" type="text" formControlName="celular" class="pergunta" placeholder="Insira seu Celular" required>
+            <input id="senha" type="password" formControlName="senha" class="pergunta" placeholder="Insira sua Senha" required>
+            <input id="curso" type="text" formControlName="curso" class="pergunta" placeholder="Insira seu Curso" required>
+            <button type="submit" class="confirmarCadastro">Salvar</button>
+          </div>
+        </form>
     </div>
+    
 </body>

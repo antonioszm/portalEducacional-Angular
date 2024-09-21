@@ -1,31 +1,39 @@
 {
-  "user": [
+  "users": [
     {
-      "nome": "Maria Silva",
-      "idade": 21,
-      "turma": "Turma A",
+      "nomeCompleto": "Maria Silva",
+      "cpf": "12345678901",
       "email": "maria.silva@email.com",
+      "celular": "11987654321",
+      "senha": "senha123",
+      "curso": "Turma A",
       "id": "5d6d"
     },
     {
-      "nome": "João Pereira",
-      "idade": 22,
-      "turma": "Turma B",
+      "nomeCompleto": "João Pereira",
+      "cpf": "23456789012",
       "email": "joao.pereira@email.com",
+      "celular": "11998765432",
+      "senha": "senha456",
+      "curso": "Turma B",
       "id": "80c4"
     },
     {
-      "nome": "Ana Souza",
-      "idade": 20,
-      "turma": "Turma A",
+      "nomeCompleto": "Ana Souza",
+      "cpf": "34567890123",
       "email": "ana.souza@email.com",
+      "celular": "11991234567",
+      "senha": "senha789",
+      "curso": "Turma A",
       "id": "5e52"
     },
     {
-      "nome": "Fernanda Costa",
-      "idade": 22,
-      "turma": "Turma B",
+      "nomeCompleto": "Fernanda Costa",
+      "cpf": "45678901234",
       "email": "fernanda.costa@email.com",
+      "celular": "11992345678",
+      "senha": "senha101",
+      "curso": "Turma B",
       "id": "abf5"
     }
   ]
