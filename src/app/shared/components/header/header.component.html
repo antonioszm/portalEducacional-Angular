@@ -1,1 +1,12 @@
-<p>header works!</p>
+<mat-toolbar>
+  <span>( ˶ˆ ᗜ ˆ˵ ) Escolinha</span>
+  <span class="example-spacer"></span>
+    <div class="user-section" (click)="toggleLogout()">
+        <p-avatar image="user.png" shape="circle"></p-avatar>
+        <span class="font-bold text-bluegray-50">{{ nomeUsuario }}</span>
+        <div *ngIf="showLogout" class="logout">
+            <i class="pi pi-sign-out"></i>
+            <span (click)="deslogar()">Logout</span>
+        </div>
+    </div>
+</mat-toolbar>

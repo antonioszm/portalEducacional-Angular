@@ -1,0 +1,81 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  background-color: #0A0A0A;
+  color: #FBFCEE;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Roboto, sans-serif;
+
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0073DC; /* Cor do título da barra */
+  }
+
+  .example-spacer {
+    flex: 1 1 auto; /* Espaçador para alinhar os itens à direita */
+  }
+
+  .user-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    p-avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%; /* Certifica-se de que o avatar seja circular */
+      }
+    }
+
+    .font-bold {
+      font-size: 1rem;
+      color: #FBFCEE;
+      font-weight: bold;
+      margin-left: 8px; /* Espaço entre o avatar e o nome do usuário */
+    }
+
+    /* Estilos para o dropdown de logout */
+    .logout {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      font-size: small;
+      background-color: #191919;
+      border: 2px solid #292929;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      z-index: 1000; /* Garante que o menu logout apareça sobre outros elementos */
+
+      i {
+        font-size: 1.2rem;
+        color: #FF6F61; /* Cor do ícone de logout */
+      }
+
+      span {
+        color: #FBFCEE;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #FF6F61; /* Efeito hover no texto de logout */
+        }
+      }
+    }
+  }
+}
