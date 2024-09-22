@@ -1,1 +1,53 @@
-<p>home works!</p>
+<body>
+  <div class="container">
+    <h1>Bem-vindo(a)!</h1>
+  
+    <section class="card-section">
+      <h2>Próximas atividades</h2>
+      <div class="cards-container">
+        <mat-card>
+          <mat-card-title>Entrega de trabalho de Angular</mat-card-title>
+        </mat-card>
+        <mat-card>
+          <mat-card-title>Avaliação da disciplina SCSS</mat-card-title>
+        </mat-card>
+        <mat-card>
+          <mat-card-title>Chat com o mentor</mat-card-title>
+        </mat-card>
+      </div>
+    </section>
+  
+    <section class="card-section">
+      <h2>Minhas disciplinas</h2>
+      <div class="cards-container">
+        <mat-card *ngIf="aluno && disciplinasPorSemestre.length > 0">
+          <mat-card-title>{{ aluno.curso.nome }}</mat-card-title>
+          
+          <div *ngFor="let semestre of disciplinasPorSemestre" class="semestre-container">
+            <h2>Semestre {{ semestre.semestre }}</h2>
+            
+            <ul>
+              <li *ngFor="let disciplina of semestre.disciplinas">{{ disciplina }}</li>
+            </ul>
+          </div>
+        </mat-card>
+      </div>
+    </section>
+  
+    <section class="card-section">
+      <h2>Cursos extras</h2>
+      <div class="cards-container">
+        <mat-card>
+          <mat-card-title>Clean Code</mat-card-title>
+        </mat-card>
+        <mat-card>
+          <mat-card-title>DevOps</mat-card-title>
+        </mat-card>
+        <mat-card>
+          <mat-card-title>SoftSkills</mat-card-title>
+        </mat-card>
+      </div>
+    </section>
+  </div>
+  
+</body>

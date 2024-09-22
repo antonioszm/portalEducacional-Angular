@@ -13,4 +13,8 @@ export class CursoService {
   getCursos(): Observable<any> {
     return this.http.get(this.apiUrl);
   }
+
+  getCursoById(id: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/${id}`);
+  }
 }
