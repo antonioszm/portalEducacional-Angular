@@ -3,11 +3,12 @@ import { MatCardModule } from '@angular/material/card';
 import { AlunoService } from '../../../services/aluno.service';
 import { CursoService } from '../../../services/curso.service';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from "../../header/header.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatCardModule, CommonModule],
+  imports: [MatCardModule, CommonModule, HeaderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

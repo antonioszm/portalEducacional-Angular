@@ -4,11 +4,12 @@ import { DisciplinasService } from '../../../services/disciplinas.service';
 import { CursoService } from '../../../services/curso.service';
 import { AlunoService } from '../../../services/aluno.service';
 import { MatCardModule } from '@angular/material/card';
+import { HeaderComponent } from '../../header/header.component';
 
 @Component({
   selector: 'app-disciplinas',
   standalone: true,
-  imports: [CommonModule,MatCardModule],
+  imports: [CommonModule,MatCardModule, HeaderComponent],
   templateUrl: './disciplinas.component.html',
   styleUrl: './disciplinas.component.scss'
 })

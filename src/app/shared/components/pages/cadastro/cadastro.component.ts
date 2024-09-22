@@ -2,12 +2,13 @@ import { Component,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AlunoService } from '../../../services/aluno.service';
 import { Validators, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from '../../header/header.component';
 
 
 @Component({
   selector: 'app-cadastro',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, HeaderComponent],
   templateUrl: './cadastro.component.html',
   styleUrl: './cadastro.component.scss'
 })
