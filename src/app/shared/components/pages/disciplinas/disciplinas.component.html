@@ -1,1 +1,21 @@
-<p>disciplinas works!</p>
+<body>
+  <div class="container">
+    <h1>Disciplinas do Curso</h1>
+    
+    <mat-card *ngIf="aluno && disciplinasPorSemestre.length > 0">
+      <mat-card-title>{{ aluno.curso.nome }}</mat-card-title>
+      
+      <div *ngFor="let semestre of disciplinasPorSemestre" class="semestre-container">
+        <h2>Semestre {{ semestre.semestre }}</h2>
+        
+        <ul>
+          <li *ngFor="let disciplina of semestre.disciplinas">{{ disciplina }}</li>
+        </ul>
+      </div>
+    </mat-card>
+  
+    <div *ngIf="!(aluno && disciplinasPorSemestre.length > 0)" class="no-data-message">
+      Não há informações disponíveis ou você não está inscrito em um curso.
+    </div>
+  </div>
+</body>

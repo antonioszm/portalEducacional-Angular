@@ -6,7 +6,10 @@
       "email": "maria.silva@email.com",
       "celular": "11987654321",
       "senha": "senha123",
-      "curso": "Turma A",
+      "curso": {
+        "id": "cursoA",
+        "nome": "Java"
+      },
       "id": "5d6d"
     },
     {
@@ -15,7 +18,10 @@
       "email": "joao.pereira@email.com",
       "celular": "11998765432",
       "senha": "senha456",
-      "curso": "Turma B",
+      "curso": {
+        "id": "cursoB",
+        "nome": "Angular"
+      },
       "id": "80c4"
     },
     {
@@ -24,7 +30,10 @@
       "email": "ana.souza@email.com",
       "celular": "11991234567",
       "senha": "senha789",
-      "curso": "Turma A",
+      "curso": {
+        "id": "cursoA",
+        "nome": "Java"
+      },
       "id": "5e52"
     },
     {
@@ -33,8 +42,41 @@
       "email": "fernanda.costa@email.com",
       "celular": "11992345678",
       "senha": "senha101",
-      "curso": "Turma B",
+      "curso": {
+        "id": "cursoB",
+        "nome": "Angular"
+      },
       "id": "abf5"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "cursoA",
+      "nome": "Java",
+      "semestres": [
+        {
+          "semestre": 1,
+          "disciplinas": ["JavaI", "JavaII"]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": ["JData", "JSecurity"]
+        }
+      ]
+    },
+    {
+      "id": "cursoB",
+      "nome": "Angular",
+      "semestres": [
+        {
+          "semestre": 1,
+          "disciplinas": ["HTML", "SCSS"]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": ["TS", "ANGULAR"]
+        }
+      ]
     }
   ]
 }
