@@ -25,6 +25,14 @@
       "id": "80c4"
     },
     {
+      "nomeCompleto": "Adimin",
+      "cpf": "23456789012",
+      "email": "adm",
+      "celular": "11998765432",
+      "senha": "12345",
+      "id": "1"
+    },
+    {
       "nomeCompleto": "Ana Souza",
       "cpf": "34567890123",
       "email": "ana.souza@email.com",
