@@ -3,7 +3,10 @@
 <div class="container">
   <!-- Input de Pesquisa -->
   <div class="search-bar">
-    <input type="text" placeholder="Pesquisar por nome ou email" [(ngModel)]="filtroAluno"/>
+    <p-floatLabel>
+      <input pInputText id="Pesquisar por nome ou email" [(ngModel)]="filtroAluno" />
+      <label for="Pesquisar por nome ou email">Pesquisar por nome ou email</label>
+    </p-floatLabel>
     </div>
   <!-- Tabela de Alunos -->
   <table class="table table-striped">

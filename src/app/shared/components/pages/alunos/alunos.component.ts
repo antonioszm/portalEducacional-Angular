@@ -4,11 +4,12 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from "../../header/header.component";
+import { FloatLabelModule } from 'primeng/floatlabel';
 
 @Component({
   selector: 'app-alunos',
   standalone: true,
-  imports: [CommonModule, FormsModule, HeaderComponent],
+  imports: [CommonModule, FormsModule, HeaderComponent, FloatLabelModule],
   templateUrl: './alunos.component.html',
   styleUrl: './alunos.component.scss'
 })
