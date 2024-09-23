@@ -4,11 +4,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../services/auth.service';
 import { ToolbarModule } from 'primeng/toolbar';
+import { SidebarComponent } from "../sidebar/sidebar.component";
 
  @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [AvatarModule, MatToolbarModule, CommonModule, ToolbarModule],
+  imports: [AvatarModule, MatToolbarModule, CommonModule, ToolbarModule, SidebarComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

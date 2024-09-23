@@ -1,1 +1,9 @@
-<p>sidebar works!</p>
+<p-sidebar [(visible)]="sidebarVisible">
+  <h3>Sidebar</h3>
+  <a href="disciplinas" >Disciplinas<br></a>
+  <a>Atividades Avaliativas<br></a>
+  <a>Solicitações<br></a>
+  <a>Biblioteca Online<br></a>
+  <a *ngIf="usuarioADM" href="alunos">Usuários<br></a>
+</p-sidebar>
+<p-button (onClick)="sidebarVisible = true" icon="pi pi-arrow-right" />
